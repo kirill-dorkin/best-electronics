@@ -19,6 +19,7 @@ use App\Http\Controllers\Api\QuickReplyController;
 use App\Http\Controllers\Api\RepairLogController;
 use App\Http\Controllers\Api\RepairOrderAxillaryController;
 use App\Http\Controllers\Api\RepairOrderController;
+use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\RepairPriorityController;
 use App\Http\Controllers\Api\RepairStatusController;
 use App\Http\Controllers\Api\ReportController;
@@ -51,6 +52,7 @@ Route::group(['middleware' => 'isAjax', 'prefix' => config('app.version', 'codeh
     Route::get('print/{repairOrder}/repair/order', [PrintController::class, 'repair'])->name('repair-orders.print');
     Route::get('print/{repairOrder}/dispatch/info', [PrintController::class, 'dispatchInfo'])->name('repair-dispatch.print');
     Route::get('tax/implementation', [RepairOrderAxillaryController::class, 'getTax'])->name('repair.get.tax');
+    Route::middleware('auth:sanctum')->post('reviews', [ReviewController::class, 'store'])->name('reviews.store');
 
     Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
         Route::post('login', [AuthController::class, 'login'])->name('auth.login');
