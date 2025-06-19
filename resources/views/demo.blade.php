@@ -20,11 +20,11 @@ $links = [
 
 $faqs=[
   [
-    'question' => 'if you have already a website or webpage or even made in WordPress for your business, how can use the repair box?',
+    'question' => 'if you have already a website or webpage or even made in WordPress for your business, how can use the best electronics?',
     'answer' => 'Yes, it can be used go to : <a class="text-blue-400" href="https://pronic.co.ke/faq#i-have-already-a-website-how-can-use-the-repair-box">https://pronic.co.ke/faq#i-have-already-a-website-how-can-use-the-repair-box</a>'
   ],
   [
-    'question' => 'What is Workflow of repair box?',
+    'question' => 'What is Workflow of best electronics?',
      'answer' => 'Yes, it can be used go to : <a class="text-blue-400" href="https://pronic.co.ke/faq#what-is-a-repair-boxs-workflow">https://pronic.co.ke/faq#what-is-a-repair-boxs-workflow</a>'
 
   ],

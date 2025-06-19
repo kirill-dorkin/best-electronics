@@ -16,7 +16,7 @@ return [
     |
      */
 
-    'name' => env('APP_NAME', 'Repair Box'),
+    'name' => env('APP_NAME', 'Best Electronics'),
 
     /*
     |--------------------------------------------------------------------------

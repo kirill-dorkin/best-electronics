@@ -15,7 +15,7 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('app_name')->default('Repair Box');
+            $table->string('app_name')->default('Best Electronics');
             $table->string('app_address')->nullable();
             $table->string('app_phone')->nullable();
             $table->string('app_https')->nullable();
@@ -34,7 +34,7 @@ class CreateSettingsTable extends Migration
             $table->string('meta_keywords');
 
             //Outgoing mails configs
-            $table->string('mail_from_name')->default('Repair Box');
+            $table->string('mail_from_name')->default('Best Electronics');
             $table->string('mail_from_address')->nullable();
             $table->string('mail_mailer')->default('log');
             $table->string('mail_host')->nullable();
