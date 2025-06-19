@@ -25,6 +25,8 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 php artisan serve
+
+# if have 503 - php artisan up
 ```
 
 After the server starts, open <http://localhost:8000> in your browser.
