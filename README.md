@@ -60,3 +60,22 @@ Quick replies use to respond to customers while updating the repair log from the
     •	Vuejs - Vue.js is an open-source model–view–view model front-end JavaScript framework
 
     
+
+## Бесплатный деплой на Render
+
+1. Зарегистрируйтесь на [Render](https://render.com/) и подключите к нему репозиторий.
+2. Создайте **Web Service** и выберите тариф `Free`.
+3. В поле Build Command укажите:
+
+```bash
+composer install --no-interaction --prefer-dist --optimize-autoloader
+```
+
+4. В поле Start Command укажите:
+
+```bash
+php artisan serve --host 0.0.0.0 --port $PORT
+```
+
+5. В настройках проекта задайте переменные окружения `APP_KEY`, `APP_URL` и данные для подключения к базе данных.
+6. После запуска приложение будет доступно по URL, который выдаст Render.
