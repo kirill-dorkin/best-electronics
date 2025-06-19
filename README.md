@@ -8,6 +8,27 @@ A repair kit is a system for booking and managing repair services. Where can cus
 It is a very clean and simple interface, where every technician can go to the workshop to handle repair orders assigned to that particular technician.
 In the workshop, the technician can update the repair log with customer notification on each update while repairing.
 
+## Installation
+
+Before running the application you need the following software installed locally:
+
+- **PHP 8.1**
+- **Composer**
+- **MySQL**
+
+Run these commands from the project root:
+
+```bash
+composer install
+cp .env.example .env
+# Adjust DB credentials in .env and create the database manually
+php artisan key:generate
+php artisan migrate --seed
+php artisan serve
+```
+
+After the server starts, open <http://localhost:8000> in your browser.
+
 ## Comprises of the following:
 
 2. Features :- the ultimate solution for efficient repair service management. Our feature-rich web application empowers you with a wide range of tools and capabilities to streamline every aspect of your repair operations.
