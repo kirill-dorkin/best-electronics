@@ -64,7 +64,7 @@ Quick replies use to respond to customers while updating the repair log from the
 ## Бесплатный деплой на Render
 
 1. Зарегистрируйтесь на [Render](https://render.com/) и подключите к нему репозиторий.
-2. Создайте **Web Service** и выберите тариф `Free`.
+2. Создайте **Web Service** и выберите тариф `Free`. Важно выбрать окружение `PHP` ("Environment: PHP"), иначе Render может запустить приложение как Node.js и возникнет ошибка `Port scan timeout`. Можно воспользоваться опцией **Import from Blueprint**, чтобы параметры из `render.yaml` применились автоматически.
 3. В поле Build Command укажите:
 
 ```bash
